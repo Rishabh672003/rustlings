@@ -1,0 +1,201 @@
+--- Startup times for process: Primary (or UI client) ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.003  000.003: --- NVIM STARTING ---
+000.234  000.230: event init
+000.375  000.141: early init
+000.675  000.300: locale set
+000.736  000.061: init first window
+001.158  000.423: inits 1
+001.167  000.009: window checked
+001.221  000.054: parsing arguments
+001.604  000.032  000.032: require('vim.shared')
+001.715  000.032  000.032: require('vim.inspect')
+001.751  000.029  000.029: require('vim._options')
+001.754  000.145  000.084: require('vim._editor')
+001.757  000.208  000.030: require('vim._init_packages')
+001.760  000.332: init lua interpreter
+003.282  001.522: nvim_ui_attach
+003.806  000.524: nvim_set_client_info
+003.809  000.003: --- NVIM STARTED ---
+
+--- Startup times for process: Embedded ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.002  000.002: --- NVIM STARTING ---
+000.123  000.121: event init
+000.199  000.076: early init
+000.342  000.143: locale set
+000.375  000.033: init first window
+000.778  000.403: inits 1
+000.792  000.014: window checked
+000.840  000.048: parsing arguments
+001.220  000.029  000.029: require('vim.shared')
+001.295  000.031  000.031: require('vim.inspect')
+001.345  000.040  000.040: require('vim._options')
+001.347  000.123  000.052: require('vim._editor')
+001.350  000.180  000.027: require('vim._init_packages')
+001.354  000.334: init lua interpreter
+001.468  000.115: expanding arguments
+001.507  000.039: inits 2
+001.864  000.357: init highlight
+001.866  000.002: waiting for UI
+002.084  000.218: done waiting for UI
+002.101  000.017: clear screen
+002.197  000.008  000.008: require('vim.keymap')
+002.954  000.849  000.841: require('vim._defaults')
+002.957  000.007: init default mappings & autocommands
+003.331  000.049  000.049: sourcing /home/rishabh/projects/neovim/runtime/ftplugin.vim
+003.390  000.027  000.027: sourcing /home/rishabh/projects/neovim/runtime/indent.vim
+003.488  000.049  000.049: sourcing /usr/share/nvim/archlinux.lua
+003.492  000.085  000.036: sourcing /etc/xdg/nvim/sysinit.vim
+003.593  000.046  000.046: require('vim.fs')
+004.003  000.406  000.406: require('vim.uri')
+004.028  000.504  000.051: require('vim.loader')
+006.003  001.925  001.925: sourcing /home/rishabh/.config/nvim/colors/catppuccin-mocha.lua
+006.197  000.186  000.186: require('rj.extras.dashboard')
+006.809  000.609  000.609: require('rj.keymaps')
+007.371  000.048  000.048: require('rj.extras.statuscolumn')
+007.437  000.051  000.051: require('rj.extras.gui-apps')
+007.441  000.628  000.529: require('rj.options')
+007.483  000.040  000.040: require('rj.extras.last-place')
+008.574  001.059  001.059: require('vim.filetype')
+008.858  001.372  000.313: require('rj.extras.big-file')
+008.917  000.056  000.056: require('rj.extras.sudo-write')
+009.049  000.130  000.130: require('rj.autocommands')
+009.670  000.553  000.553: require('mini.deps')
+009.810  000.060  000.060: require('vim.health')
+009.820  000.145  000.086: require('vim.deprecated.health')
+009.960  000.078  000.078: require('vim.iter')
+010.202  000.011  000.011: require('vim.F')
+010.214  001.162  000.376: require('rj.mini-deps')
+010.382  000.108  000.108: require('rj.plugins.auto-save')
+010.443  000.058  000.058: require('rj.plugins.mini-statusline')
+010.630  000.131  000.131: require('mini.notify')
+010.854  000.409  000.279: require('rj.plugins.mini-notify')
+010.907  000.049  000.049: require('rj.plugins.mini-pairs')
+010.968  000.059  000.059: require('rj.plugins.mini-files')
+011.010  000.040  000.040: require('rj.plugins.mini-icons')
+011.092  000.080  000.080: require('rj.plugins.mini-color')
+011.155  000.060  000.060: require('rj.plugins.mini-comment')
+011.248  000.088  000.088: require('rj.plugins.mini-git')
+011.294  000.043  000.043: require('rj.plugins.mini-indentscope')
+011.335  000.039  000.039: require('rj.plugins.mini-cursorword')
+011.376  000.039  000.039: require('rj.plugins.mini-hipatterns')
+011.431  000.053  000.053: require('rj.plugins.mini-surround')
+011.511  000.076  000.076: require('rj.plugins.mini-clue')
+011.560  000.046  000.046: require('rj.plugins.gitsigns')
+011.639  000.077  000.077: require('rj.plugins.hop')
+011.756  000.114  000.114: require('rj.plugins.nvim-telescope')
+011.881  000.123  000.123: require('rj.plugins.project')
+011.969  000.085  000.085: require('rj.plugins.harpoon')
+012.024  000.052  000.052: require('rj.plugins.conform')
+012.114  000.088  000.088: require('rj.plugins.cybu')
+012.164  000.048  000.048: require('rj.plugins.jaq')
+012.251  000.085  000.085: require('rj.plugins.barbecue')
+012.372  000.118  000.118: require('rj.plugins.nvim-treesitter')
+012.504  000.130  000.130: require('rj.plugins.nvim-ts-autotag')
+012.580  000.073  000.073: require('rj.plugins.mason')
+012.676  000.094  000.094: require('rj.plugins.swenv')
+012.870  000.191  000.191: require('rj.plugins.autocomplete')
+012.946  000.073  000.073: require('rj.plugins.toggleterm')
+012.981  000.033  000.033: require('rj.plugins.blink')
+013.007  000.023  000.023: require('rj.plugins.leetcode')
+013.009  002.793  000.141: require('rj.plugins')
+013.183  000.109  000.109: require('vim.diagnostic')
+013.343  000.048  000.048: require('vim.lsp.log')
+013.608  000.260  000.260: require('vim.lsp.protocol')
+013.746  000.135  000.135: require('vim.lsp.util')
+013.809  000.027  000.027: require('vim.lsp.sync')
+013.813  000.063  000.037: require('vim.lsp._changetracking')
+013.900  000.083  000.083: require('vim.lsp.rpc')
+013.938  000.751  000.161: require('vim.lsp')
+014.074  000.067  000.067: require('vim.lsp.completion')
+014.104  000.163  000.096: require('vim.lsp.handlers')
+014.605  001.594  000.571: require('rj.lsp')
+014.610  011.101  000.102: sourcing /home/rishabh/.config/nvim/init.lua
+014.616  000.398: sourcing vimrc file(s)
+015.079  000.014  000.014: sourcing /usr/share/nvim/site/ftdetect/ghostty.vim
+015.157  000.018  000.018: sourcing /usr/share/vim/vimfiles/ftdetect/PKGBUILD.vim
+015.183  000.015  000.015: sourcing /usr/share/vim/vimfiles/ftdetect/SRCINFO.vim
+015.203  000.010  000.010: sourcing /usr/share/vim/vimfiles/ftdetect/ghostty.vim
+015.235  000.022  000.022: sourcing /usr/share/vim/vimfiles/ftdetect/lf.vim
+015.277  000.030  000.030: sourcing /usr/share/vim/vimfiles/ftdetect/meson.vim
+015.282  000.341  000.232: sourcing /home/rishabh/projects/neovim/runtime/filetype.lua
+015.474  000.088  000.088: sourcing /home/rishabh/projects/neovim/runtime/syntax/synload.vim
+015.561  000.231  000.143: sourcing /home/rishabh/projects/neovim/runtime/syntax/syntax.vim
+016.139  000.175  000.175: sourcing /home/rishabh/projects/neovim/runtime/plugin/gzip.vim
+016.600  000.224  000.224: sourcing /home/rishabh/projects/neovim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+016.643  000.487  000.263: sourcing /home/rishabh/projects/neovim/runtime/plugin/matchit.vim
+016.810  000.153  000.153: sourcing /home/rishabh/projects/neovim/runtime/plugin/matchparen.vim
+017.137  000.310  000.310: sourcing /home/rishabh/projects/neovim/runtime/plugin/netrwPlugin.vim
+017.317  000.153  000.153: sourcing /home/rishabh/projects/neovim/runtime/plugin/rplugin.vim
+017.411  000.063  000.063: sourcing /home/rishabh/projects/neovim/runtime/plugin/shada.vim
+017.465  000.019  000.019: sourcing /home/rishabh/projects/neovim/runtime/plugin/spellfile.vim
+017.579  000.095  000.095: sourcing /home/rishabh/projects/neovim/runtime/plugin/tarPlugin.vim
+017.619  000.016  000.016: sourcing /home/rishabh/projects/neovim/runtime/plugin/tutor.vim
+017.782  000.146  000.146: sourcing /home/rishabh/projects/neovim/runtime/plugin/zipPlugin.vim
+017.865  000.056  000.056: sourcing /home/rishabh/projects/neovim/runtime/plugin/editorconfig.lua
+017.928  000.043  000.043: sourcing /home/rishabh/projects/neovim/runtime/plugin/man.lua
+017.985  000.038  000.038: sourcing /home/rishabh/projects/neovim/runtime/plugin/osc52.lua
+018.048  000.039  000.039: sourcing /home/rishabh/projects/neovim/runtime/plugin/tohtml.lua
+018.684  000.557  000.557: sourcing /usr/share/vim/vimfiles/plugin/fzf.vim
+018.769  000.056  000.056: sourcing /usr/share/vim/vimfiles/plugin/redact_pass.vim
+018.773  001.179: loading rtp plugins
+018.923  000.150: loading packages
+019.209  000.286: loading after plugins
+019.218  000.009: inits 3
+023.548  004.329: reading ShaDa
+026.622  000.050  000.050: sourcing /home/rishabh/.local/share/nvim/site/pack/deps/opt/rustaceanvim/ftplugin/rust.vim
+027.617  000.162  000.162: require('rustaceanvim.types.internal')
+027.945  000.057  000.057: require('rustaceanvim.shell')
+027.948  000.127  000.070: require('rustaceanvim.os')
+028.009  000.058  000.058: require('rustaceanvim.rustc')
+028.012  000.279  000.094: require('rustaceanvim.rust_analyzer')
+028.018  000.396  000.118: require('rustaceanvim.cargo')
+028.084  000.064  000.064: require('rustaceanvim.config')
+028.185  000.052  000.052: require('rustaceanvim.executors.termopen')
+028.266  000.078  000.078: require('rustaceanvim.executors.quickfix')
+028.371  000.077  000.077: require('rustaceanvim.executors.toggleterm')
+028.430  000.056  000.056: require('rustaceanvim.executors.vimux')
+028.489  000.057  000.057: require('rustaceanvim.executors.background')
+028.586  000.053  000.053: require('rustaceanvim.neotest.trans')
+028.589  000.098  000.045: require('rustaceanvim.executors.neotest')
+028.593  000.506  000.089: require('rustaceanvim.executors')
+028.663  000.067  000.067: require('rustaceanvim.config.server')
+029.176  000.087  000.087: require('rustaceanvim.config.check')
+030.143  003.318  002.035: require('rustaceanvim.config.internal')
+030.211  000.064  000.064: require('rustaceanvim.compat')
+030.575  000.343  000.343: require('rustaceanvim.commands')
+030.762  000.026  000.026: require('rustaceanvim.server_status')
+030.773  000.122  000.095: require('rustaceanvim.lsp')
+030.946  000.041  000.041: require('vim._system')
+081.889  000.079  000.079: require('rustaceanvim.config.json')
+082.022  000.054  000.054: require('rustaceanvim.hover_actions')
+082.141  000.109  000.109: require('vim.lsp.client')
+082.219  000.034  000.034: require('vim.glob')
+082.224  000.072  000.038: require('vim.lsp._dynamic')
+083.806  000.091  000.091: require('vim.version')
+086.840  060.184  055.890: sourcing /home/rishabh/.local/share/nvim/site/pack/deps/opt/rustaceanvim/ftplugin/rust.lua
+087.652  000.066  000.066: sourcing /home/rishabh/projects/neovim/runtime/compiler/rustc.vim
+087.716  000.178  000.112: sourcing /home/rishabh/projects/neovim/runtime/compiler/cargo.vim
+088.012  000.785  000.606: sourcing /home/rishabh/projects/neovim/runtime/ftplugin/rust.vim
+088.720  000.160  000.160: sourcing /home/rishabh/projects/neovim/runtime/indent/rust.vim
+098.177  004.493  004.493: sourcing /home/rishabh/projects/neovim/runtime/syntax/rust.vim
+098.338  008.888  004.394: sourcing /home/rishabh/projects/neovim/runtime/syntax/rust.vim
+098.698  000.176  000.176: require('editorconfig')
+098.909  005.119: opening buffers
+098.940  000.031: BufEnter autocommands
+098.945  000.006: editing files in windows
+099.091  000.146: VimEnter autocommands
+099.108  000.016: UIEnter autocommands
+099.110  000.003: before starting main loop
+109.642  010.531: first screen update
+109.647  000.005: --- NVIM STARTED ---
+
